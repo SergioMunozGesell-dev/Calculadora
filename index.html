@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculadora" id="calculadora">
+        <input type="text" class="result" id="result" disabled="True">
+
+        <div class="number" id="number">
+            <div class="numbers" id="numbers" onclick="add('1')">1</div>
+            <div class="numbers" id="numbers" onclick="add('2')">2</div>
+            <div class="numbers" id="numbers" onclick="add('3')">3</div>
+            <div class="numbers" id="numbers" onclick="add('4')">4</div>
+            <div class="numbers" id="numbers" onclick="add('5')">5</div>
+            <div class="numbers" id="numbers" onclick="add('6')">6</div>
+            <div class="numbers" id="numbers" onclick="add('7')">7</div>
+            <div class="numbers" id="numbers" onclick="add('8')">8</div>
+            <div class="numbers" id="numbers" onclick="add('9')">9</div>
+            <div class="numbers" id="numbers" onclick="resultado()">=</div>
+            <div class="numbers" id="numbers" onclick="add('0')">0</div>
+            <div class="numbers" id="numbers" onclick="add('.')">.</div>
+        </div>
+
+        <div class="operator-con" id="operator-con">
+            <div class="operator" id="operator" onclick="add('+')">+</div>
+            <div class="operator" id="operator" onclick="add('-')">-</div>
+            <div class="operator" id="operator" onclick="add('*')">*</div>
+            <div class="operator" id="operator" onclick="add('/')">/</div>
+            <div class="operator" id="operator" onclick="clearInput()">Clear</div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
